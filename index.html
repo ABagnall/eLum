@@ -83,62 +83,52 @@
             height:100%;
             width:100%;
         }
-        .letterSpacing_0dot11vw {letter-spacing:-0.14vw;}
-        .letterSpacing_0dot055vw {letter-spacing:-0.05vw;}
+        a:hover {text-decoration:none;}
+        .letterSpacing_0dot14vw {letter-spacing:-0.14vw;}
+        .letterSpacing_0dot05vw {letter-spacing:-0.05vw;}
         .purple {color:#78298d;}
         strong {font-weight:700;}  
-        a:hover {text-decoration:none;}
-        
         
         /* 16:9 (1.778) */
-        .sidebar {width:5.57vw; background-image:url(assets/eLum-Sidebar-Tile.svg); background-repeat: repeat-y; height:100%; position:fixed;}
-        .container {padding:9.02vh 9.02vw 5.57vh; margin-left:5.57vw;}
-        .logo {width:56.25vw; height:28.125vw; background-image:url(assets/eLum-Logo-Purple-Small-RGB-V2.svg);}
+        .container {margin-left:5.57vw; padding:9.02vh 9.02vw 5.57vh;}
+        .logo {background-image:url(assets/eLum-Logo-Purple-Small-RGB-V2.svg); height:28.125vw; width:56.25vw;}
+        .sidebar {height:100%; background-image:url(assets/eLum-Sidebar-Tile.svg); background-repeat: repeat-y; position:fixed; width:5.57vw; }
         p {font-size: 5.57vw; padding-top:5.57vw;}
 
         /* 4:3 (1.333) */
         @media screen and (min-width:768px) {
+            .container {margin-left:5.63vw; padding:10.01vh 10.01vw;}
             .sidebar {width:5.63vw;}
-            .container {padding:10.01vh 10.01vw; margin-left:5.63vw;}
-            .logo {width:31.64vw; height:15.82vw;}
+            .logo {height:15.82vw; width:31.64vw;}
             p {font-size: 4.22vw; padding-top:5.63vw;}
         }
         
         /* 4:3 (1.333) */
         @media screen and (min-width:1024px) {
-            .sidebar {width:4.22vw;}
-            .container {padding:10.01vh 10.01vw; margin-left:4.22vw;}
-            .logo {width:31.64vw; height:15.82vw;}
-            p {font-size: 3.17vw; padding-top:3.17vw;}  
+            .container {margin-left:4.22vw; padding:10.01vh 10.01vw;}
             .letterSpacing_0dot146vw {letter-spacing:-0.146vw;}
+            .logo {height:15.82vw; width:31.64vw; } 
+            p {font-size: 3.17vw; padding-top:3.17vw;}
+            .sidebar {width:4.22vw;}  
         }
         
         /* 16:9 (1.778) */
         @media screen and (min-width:1280px) {
-            .sidebar {width:3.17vw;}
-            .container {padding:0; margin-left:0; width:52.6vw;}
-            .center {
-                padding-left: 3.17vw;
-                margin: 0 auto;
-                position: relative;
-                top: 50%;
-                -webkit-transform: translateY(-50%);
-                -ms-transform: translateY(-50%);
-                transform: translateY(-50%);
-            }
-            .logo {width:17.8vw; height:8.9vw; background-image:url(assets/eLum-Logo-Purple-Large-RGB-V2.svg)}
-            p {font-size: 1.78vw; padding-top:1.78vw; letter-spacing:-0.015vw !important;}
+            .center {margin: 0 auto; padding-left: 3.17vw; position: relative; top: 50%; -webkit-transform: translateY(-50%); -ms-transform: translateY(-50%); transform: translateY(-50%);}
+            .container {padding:0; width:52.6vw;}
+            .logo {background-image:url(assets/eLum-Logo-Purple-Large-RGB-V2.svg); height:8.9vw; width:17.8vw;}
+            p {font-size: 1.78vw; letter-spacing:-0.015vw !important; padding-top:1.78vw;}
+            .sidebar {width:3.17vw;}       
         }
-        
     </style>
     </head>
 <body>
     <div class="sidebar"></div>
     <div class="container center">
         <div class="logo"></div>
-        <p class="purple letterSpacing_0dot055vw letterSpacing_0dot146vw"><strong>eLum Technologies, Inc. is an early stage endovascular medical device company based in California.</strong></p>
-        <p class="letterSpacing_0dot11vw">eLum Technologies is focused on disruptive technologies to address endovascular diseases.</p>
-        <p class="letterSpacing_0dot11vw">For more information please contact <a class="purple" href="mailto:info@elumtech.com">info@elumtech.com</a></p>
+        <p class="purple letterSpacing_0dot05vw letterSpacing_0dot146vw"><strong>eLum Technologies, Inc. is an early stage endovascular medical device company based in California.</strong></p>
+        <p class="letterSpacing_0dot14vw">eLum Technologies is focused on disruptive technologies to address endovascular diseases.</p>
+        <p class="letterSpacing_0dot14vw">For more information please contact <a class="purple" href="mailto:info@elumtech.com">info@elumtech.com</a></p>
         <p><script type="text/javascript">document.write(" &copy;" + new Date().getFullYear());</script></p>
     </div>
 </body>
